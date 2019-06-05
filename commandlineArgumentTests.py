@@ -15,7 +15,7 @@ parser.add_argument('-o','--optionalArg', help = 'this is an optional int argume
 parser.add_argument('-o2','--optionalArg2', help = 'this is another optional int argument with a default', type = int, default = 0) 
 group = parser.add_mutually_exclusive_group()
 group.add_argument("-v", "--verbose", help ='do you want the program to be verbose', action="store_true")
-group.add_argument("-q", "--quiet", help ='do you want the program to be quiet', action="store_true")
+group.add_argument("-q", "--quiet", help ='do you want the program to be quiet', action="store_true")  
 args = parser.parse_args()
 # args is now a namespace with the arguments that were passed
 print(args)
